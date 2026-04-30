@@ -21,13 +21,18 @@ Proyek ini merupakan hasil analisis data dari dataset E-Commerce Olist. Proyek i
 - `url.txt`: Tautan akses dashboard publik.
 
 ## Cara Menjalankan Dashboard Secara Lokal
-1. Pastikan Python sudah terinstal, lalu pasang library yang dibutuhkan:
-   ```bash
-   pip install -r requirements.txt
-2. Setelah semua library terinstal, silakan masuk ke direktori dashboard dan jalankan aplikasi menggunakan perintah berikut:
-   ```bash
-   cd dashboard
-   streamlit run dashboard.py
+1. Setup Environment - Anaconda
+	```conda create --name main-ds python=3.9
+	conda activate main-ds
+	pip install -r requirements.txt
+2. Setup Environment - Shell/Terminal
+	```mkdir proyek_analisis_data
+	cd proyek_analisis_data
+	pipenv install
+	pipenv shell
+	pip install -r requirements.txt
+3. Run steamlit app
+	```streamlit run dashboard.py
 
 Proyek ini juga sudah dideploy secara online dan dapat diakses secara langsung melalui tautan berikut:
 **https://8uyohbtxqp6sscbirsuhxj.streamlit.app/**
