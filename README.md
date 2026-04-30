@@ -1,23 +1,24 @@
 # Proyek Analisis Data: Olist E-Commerce Dataset 📊
 
 ## Deskripsi
-Proyek ini merupakan hasil analisis data dari dataset E-Commerce Olist. Proyek ini mencakup seluruh siklus analisis data, mulai dari pengolahan data mentah hingga penyajian wawasan bisnis melalui dashboard interaktif. Fokus utama analisis ini adalah memahami distribusi geografis pelanggan, loyalitas pengguna, dan profil pelanggan dengan kontribusi pendapatan terbesar.
+Proyek ini merupakan hasil analisis mendalam terhadap dataset E-Commerce Olist untuk memahami dinamika pasar di Brazil. Fokus utama analisis ini adalah membedah distribusi geografis pelanggan dan mengevaluasi tingkat retensi pengguna guna memberikan rekomendasi strategis bagi pertumbuhan bisnis. Analisis dibatasi secara ketat pada periode operasional **Januari 2017 hingga Desember 2018** untuk memastikan relevansi data sesuai prinsip SMART.
 
-## Tahapan Analisis (Data Wrangling & EDA)
-- **Data Gathering**: Mengintegrasikan berbagai tabel dataset Olist (customers, orders, payments, dll).
-- **Data Assessing & Cleaning**: Menangani missing values, menghapus data duplikat, dan memastikan konsistensi tipe data (terutama kolom datetime).
-- **Exploratory Data Analysis (EDA)**: Menjelajahi pola dasar data untuk menjawab pertanyaan bisnis terkait persebaran pelanggan dan tren pesanan.
+## Tahapan Analisis (Data Science Lifecycle)
+*   **Data Gathering**: Mengintegrasikan berbagai tabel dari dataset Olist (customers, orders, dan payments).
+*   **Data Assessing & Cleaning**: Menangani *missing values*, memastikan konsistensi tipe data (terutama konversi kolom datetime), serta melakukan filtering data berbasis waktu (2017-2018).
+*   **Exploratory Data Analysis (EDA)**: Menjelajahi pola persebaran pelanggan antar wilayah dan menganalisis perilaku pembelian ulang (loyalitas).
+*   **Data Visualization**: Menyajikan temuan dalam bentuk visualisasi yang memenuhi prinsip integritas data (Tufte's principles).
 
 ## Wawasan Utama (Insights)
-1. **Analisis Geografis**: Wilayah Tenggara Brazil (Sao Paulo & Rio de Janeiro) merupakan basis pelanggan terbesar. Hal ini menjadi peluang besar untuk optimalisasi distribusi logistik.
-2. **Manual Grouping (Retensi)**: Ditemukan bahwa 96.9% pelanggan merupakan *One-Time Buyer*. Insight ini menunjukkan perlunya strategi pemasaran baru untuk meningkatkan loyalitas pelanggan.
+1.  **Analisis Geografis (Dominasi Tenggara)**: Aktivitas ekonomi Olist masih sangat terpusat di wilayah Tenggara Brazil. **São Paulo (SP)** memimpin jauh dengan lebih dari 40.000 pelanggan unik. Hal ini menunjukkan perlunya efisiensi logistik di wilayah padat dan strategi ekspansi di wilayah yang masih sepi.
+2.  **Analisis Retensi (Tantangan Loyalitas)**: Ditemukan bahwa **96,9%** pelanggan merupakan *One-Time Buyer*. Angka *Repeat Buyer* yang hanya menyentuh **3,1%** menjadi sinyal urgensi bagi tim bisnis untuk segera merancang program loyalitas atau CRM guna meningkatkan *Customer Lifetime Value*.
 3. **RFM Analysis (Monetary)**: Berhasil mengidentifikasi profil pelanggan "Top Spenders" untuk keperluan program loyalitas eksklusif atau penawaran produk premium.
 
 ## Struktur Proyek
-- `/dashboard`: Berisi file aplikasi utama `dashboard.py` dan `main_data.csv`.
-- `/data`: Berisi kumpulan dataset mentah (raw data) asli.
-- `notebook.ipynb`: Dokumentasi teknis lengkap dari tahap pembersihan data hingga visualisasi.
-- `requirements.txt`: Daftar pustaka (library) Python yang dibutuhkan.
+- `/dashboard`: Berisi file aplikasi utama `dashboard.py` dan dataset yang telah dibersihkan `main_data.csv`.
+- `/data`: Kumpulan dataset mentah (raw data) asli dari Olist.
+- `notebook.ipynb`: Dokumentasi teknis lengkap mulai dari tahap *wrangling*, EDA, hingga visualisasi.
+- `requirements.txt`: Daftar pustaka (library) Python yang dibutuhkan untuk menjalankan lingkungan proyek.
 - `url.txt`: Tautan akses dashboard publik.
 
 ## Cara Menjalankan Dashboard Secara Lokal
