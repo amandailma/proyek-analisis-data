@@ -33,8 +33,7 @@ Proyek ini merupakan hasil analisis data dari dataset E-Commerce Olist. Proyek i
 	pip install -r requirements.txt
 3. Run steamlit app
 	 ```bash
-   cd dashboard
-   streamlit run dashboard.py```
+    streamlit run dashboard.py
 
 Proyek ini juga sudah dideploy secara online dan dapat diakses secara langsung melalui tautan berikut:
 **https://8uyohbtxqp6sscbirsuhxj.streamlit.app/**
