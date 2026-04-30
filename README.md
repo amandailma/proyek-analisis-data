@@ -25,6 +25,7 @@ Proyek ini merupakan hasil analisis data dari dataset E-Commerce Olist. Proyek i
    ```bash
    pip install -r requirements.txt
 2. Setelah semua library terinstal, silakan masuk ke direktori dashboard dan jalankan aplikasi menggunakan perintah berikut:
+```bash
 cd dashboard
 streamlit run dashboard.py
 
